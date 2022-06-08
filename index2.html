@@ -1,1 +1,78 @@
-
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-device, initial-sacle=1.0">
+    <title>RefugeUC</title>
+     <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header>
+    <nav> 
+      <a class="logo" href="/"> RefugeUC </a>
+    </nav>
+  </header>
+   <div class="box">
+      <form action="">
+        <fieldset>
+         <legend><b>Formulário de Abrigo</b></legend>
+          <br>
+          <div class="inputBox">
+            <input type="text" name="name" id="nome" class="inputUser" required>
+            <label for="nome" class="labelInput">Nome Commpleto</label>
+          </div>
+          <br><br>
+           
+          <div class="inputBox">
+            <input type="text" name="email" id="email" class="inputUser" required>
+            <label for="email" class="labelInput">Email</label>
+          </div>
+           <br><br>
+           
+          <div class="inputBox">
+            <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+            <label for="telefone" class="labelInput">Telefone</label>
+          </div>
+          <br>
+           
+          <p>Sexo:</p>
+          <input type="radio" id="feminino"name="genero" value="feminino" required>
+          <label for="" class="labelInput">Feminino</label>
+          <br>
+          <input type="radio" id="masculino" name="genero" value="masculino" required>
+          <label for="">Masculino</label>
+          <br>
+          <input type="radio" id="outro" name="genero" value="outro" required>
+          <label for="" class="labelInput">Outro</label>
+            <br><br>
+           
+        <div class="inputBox">
+          <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+            <input type="date" name="data_nascimento" id="data_nascimento" required>
+          </div>
+            <br><br>
+           
+          <div class="inputBox">
+            <input type="text" name="cidade" id="cidade" class="inputUser" required>
+            <label for="cidade" class="labelInput" >Cidade</label>
+          </div>
+          <br><br>
+           
+          <div class="inputBox">
+            <input type="text" name="estado" id="estado" class="inputUser" required>
+            <label for="estado" class="labelInput">Estado:</label>
+          </div>
+          <br><br>
+           
+          <div class="inputBox">
+            <input type="text" name="endereco" id="endereco" class="inputUser" required>
+            <label for="endereco" class="labelInput" >Endereço</label>
+          </div>
+          <input type="submit" name="submmit">
+           <div>
+          <button onclick="salvar()">SALVAR DADOS</button>
+            <button onclick="recuperar()">RECUPERAR DADOS</button>
+              <button onclick="limpar()">LIMPAR DADOS</button>
+         </div>
+        </fieldset>
+      </form>
